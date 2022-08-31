@@ -62,28 +62,28 @@
                 <ul class="contact-short-info list-unstyled">
 
                     {% if settings.address != blank %}
-                    <li>
+                    <li class="mb-4">
                         <i class="fa fa-home contact-icon pr-4"></i>
                         <span>{{ settings.address }}</span>
                     </li>
                     {% endif %}
 
                     {% if settings.phone != blank %}
-                    <li>
+                    <li class="mb-4">
                         <i class="fa fa-phone contact-icon pr-4"></i>
                         <span>{{ settings.phone }}</span>
                     </li>
                     {% endif %}
 
                     {% if settings.fax != blank %}
-                    <li>
+                    <li class="mb-4">
                         <i class="fa fa-fax contact-icon pr-4"></i>
                         <span>{{ settings.fax }}</span>
                     </li>
                     {% endif %}
 
                     {% if settings.email != blank %}
-                    <li>
+                    <li class="mb-5">
                         <i class="fa fa-envelope-o contact-icon pr-4"></i>
                         <span>{{ settings.email }}</span>
                     </li>

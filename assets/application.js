@@ -1,3 +1,9 @@
+(function ($) {
+  $(document).ready(function () {
+    $(".carousel-inner .carousel-item:first-child").addClass("active");
+  });
+})(jQuery);
+
 $(".btn.edit-address").click(function () {
   $(this).hide();
   $(this).parents("td").siblings(".address-edit").show();
