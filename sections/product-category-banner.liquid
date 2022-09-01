@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title text-center">
-                    <h2>Product Category</h2>
+                    <h2>{{ section.settings.title }}</h2>
                 </div>
             </div>
 
@@ -49,6 +49,12 @@
 {
 "name": "Product Category Banners",
 "settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Product Category"
+},
 {
 "type": "text",
 "id": "category_top_left_header",
