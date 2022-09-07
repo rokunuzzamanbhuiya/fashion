@@ -41,5 +41,20 @@
         "label": "Email"
       }
     ]
+  },
+  {
+    "name": "Header Settings",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "logo_upload",
+      "label": "Logo Uploader"
+      },
+      {
+    "type": "text",
+    "id": "phone_number",
+    "label": "Phone Number"
+      }
+    ]
   }
 ]

@@ -3,8 +3,12 @@
         <div class="row">
             <div class="col-md-4 col-xs-12 col-sm-4">
                 <div class="contact-number">
+
+                    {% if settings.phone_number != blank %}
                     <i class="fa fa-phone"></i>
-                    <span>0129- 12323-123123</span>
+                    <span>{{ settings.phone_number }}</span>
+                    {% endif %}
+
                 </div>
             </div>
 
@@ -12,18 +16,7 @@
                 <!-- Site Logo -->
                 <div class="logo text-center">
                     <a href="/">
-                        <!-- replace logo here -->
-                        <svg width="205px" height="29px" viewBox="0 0 155 29" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40"
-                                font-family="AustinBold, Austin" font-weight="bold">
-                                <g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
-                                    <text id="fashion">
-                                        <tspan x="108.94" y="325">FASHION</tspan>
-                                    </text>
-                                </g>
-                            </g>
-                        </svg>
+                        <img src="{{ settings.logo_upload | img_url: '1920x' }}" alt="">
                     </a>
                 </div>
             </div>
