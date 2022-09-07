@@ -1,7 +1,10 @@
+{% assign short_description = product.description | split: "Product Description" | first %}
+{% assign product_description = product.description | split: "Product Description" | last | split: "Specifications" |
+first %}
+{% assign specifications = product.description | split: "Specifications" | last %}
+
 <script type="text/javascript">
-
   window.product = {{ product | json }} || {}
-
 </script>
 
 <section class="single-product">
@@ -35,7 +38,7 @@
           <h2>{{ product.title }}</h2>
           <p class="product-price">{{ product.price | money}}</p>
 
-          <p class="product-description">{{ product.description }}</p>
+          <p class="product-description">{{ short_description }}</p>
 
 
           <form method="POST" action="/cart/add">
@@ -100,29 +103,10 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h4>Product Description</h4>
-            <p>{{ product.description }}</p>
+            <p>{{ product_description }}</p>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>Small</td>
-                  <td>15 inches</td>
-                </tr>
-                <tr>
-                  <td>Medium</td>
-                  <td>17 inches</td>
-                </tr>
-                <tr>
-                  <td>Large</td>
-                  <td>20 inches</td>
-                </tr>
-                <tr>
-                  <td>X Large</td>
-                  <td>25 inches</td>
-                </tr>
-              </tbody>
-            </table>
+            {{ specifications }}
           </div>
         </div>
       </div>
