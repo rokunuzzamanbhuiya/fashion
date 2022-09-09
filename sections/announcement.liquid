@@ -1,0 +1,25 @@
+{% if section.settings.show_announcement == true %}
+<div class="announcement-bar">
+    {{section.settings.msg}}
+</div>
+{% endif %}
+{% schema %}
+{
+"name": "Announcement",
+"settings": [
+{
+"type": "checkbox",
+"id": "show_announcement",
+"label": "Show announcement",
+"default": true
+},
+{
+"type":"text",
+"id":"msg",
+"label":"Announcement bar msg",
+"default":"Sell is live..."
+}
+]
+
+}
+{% endschema %}

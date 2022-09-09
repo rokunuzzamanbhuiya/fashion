@@ -1435,7 +1435,15 @@ p.with-icons i {
 }
 
 
-
+/*=================================================================
+  Custom CSS
+==================================================================*/
 .contact-icon{
   font-size: 25px;
+}
+.announcement-bar { 
+  color: white;
+  background-color: #000000; 
+  text-align: center; 
+  padding:5px; 
 }
