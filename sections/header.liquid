@@ -6,7 +6,7 @@
 
                     {% if settings.phone_number != blank %}
                     <i class="fa fa-phone"></i>
-                    <span>{{ settings.phone_number }}</span>
+                    <span style="font-weight:bold;">{{ settings.phone_number }}</span>
                     {% endif %}
 
                 </div>
@@ -15,9 +15,15 @@
             <div class="col-md-4 col-xs-12 col-sm-4">
                 <!-- Site Logo -->
                 <div class="logo text-center">
+                    {% if settings.logo_upload %}
                     <a href="/">
                         <img src="{{ settings.logo_upload | img_url: '1920x' }}" alt="">
                     </a>
+                    {% else %}
+                    <a href="/">
+                        <h3 style="font-weight:bold;">{{ shop.name }}</h3>
+                    </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-md-4 col-xs-12 col-sm-4">

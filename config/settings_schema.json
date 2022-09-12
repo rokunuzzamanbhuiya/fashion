@@ -56,5 +56,16 @@
     "label": "Phone Number"
       }
     ]
+  },
+  {
+    "name": "Favicon Setting",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon Image",
+        "info": "32 x 32px recommended"
+      }
+    ]
   }
 ]
