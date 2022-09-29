@@ -1,0 +1,13 @@
+{
+    "sections": {
+        "homepage-carousel": {
+            "type": "homepage-carousel",
+            "settings": {
+                "image": ""
+            }
+        }
+    },
+    "order": [
+        "homepage-carousel"
+    ]
+}

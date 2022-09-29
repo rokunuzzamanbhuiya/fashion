@@ -15,6 +15,7 @@
             <div class="col-md-4 col-xs-12 col-sm-4">
                 <!-- Site Logo -->
                 <div class="logo text-center">
+
                     {% if settings.logo_upload %}
                     <a href="/">
                         <img src="{{ settings.logo_upload | img_url: '1920x' }}" alt="">
@@ -24,6 +25,7 @@
                         <h3 style="font-weight:bold;">{{ shop.name }}</h3>
                     </a>
                     {% endif %}
+
                 </div>
             </div>
             <div class="col-md-4 col-xs-12 col-sm-4">
